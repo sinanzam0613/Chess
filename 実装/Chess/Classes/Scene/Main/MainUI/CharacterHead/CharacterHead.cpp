@@ -121,23 +121,22 @@ namespace MyGame{
     }
     
     bool CharacterHead::onTouchBegan(Touch* touch, Event* event){
-        Director::getInstance()->end();
-//        Sprite* t_target = static_cast<Sprite*>(event->getCurrentTarget());
-//        Point t_touchLocation = t_target->convertToNodeSpace(touch->getLocation());
-//        Size t_size = t_target->getContentSize();
-//        Rect t_rect = Rect(0, 0, t_size.width, t_size.height);
-//        
-//        //  自身が活動中かつ範囲内をタッチされていたら
-//        if(m_isActive && t_rect.containsPoint(t_touchLocation)){
-//            //  子が活動中であれば停止させる
-//            if(m_charaStates->getIsActive()){
-//                m_charaStates->setActive(false);
-//            }
-//            else{
-//                this->ChangeSprite(1);
-//                m_charaStates->setActive(true);
-//            }
-//        }
+        Sprite* t_target = static_cast<Sprite*>(event->getCurrentTarget());
+        Point t_touchLocation = t_target->convertToNodeSpace(touch->getLocation());
+        Size t_size = t_target->getContentSize();
+        Rect t_rect = Rect(0, 0, t_size.width, t_size.height);
+        
+        //  自身が活動中かつ範囲内をタッチされていたら
+        if(m_isActive && t_rect.containsPoint(t_touchLocation)){
+            //  子が活動中であれば停止させる
+            if(m_charaStates->getIsActive()){
+                m_charaStates->setActive(false);
+            }
+            else{
+                this->ChangeSprite(1);
+                m_charaStates->setActive(true);
+            }
+        }
         return true;
     }
 }
