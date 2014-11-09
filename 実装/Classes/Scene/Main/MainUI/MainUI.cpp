@@ -12,12 +12,14 @@
 #include "MyMath.h"
 #include "CharacterHead/CharacterHead.h"
 
-//  ChildTag
-const int TAG_STATESBAR = 0;
-const int TAG_CHARACTER_HEAD = 1;
-//  LayerDepth
-const int LAYER_STATESBAR = 0;
-const int LAYER_CHARACTER_HEAD = 1;
+namespace  {
+    //  ChildTag
+    const int TAG_STATESBAR = 0;
+    const int TAG_CHARACTER_HEAD = 1;
+    //  LayerDepth
+    const int LAYER_STATESBAR = 0;
+    const int LAYER_CHARACTER_HEAD = 1;
+}
 
 namespace MyGame{
     MainUI::MainUI(){

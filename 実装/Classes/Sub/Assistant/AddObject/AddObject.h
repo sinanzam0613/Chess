@@ -31,6 +31,7 @@ namespace MyGame {
                 node->addChild(t_retSprite);
                 return t_retSprite;
             }
+            
             return NULL;
         }
         

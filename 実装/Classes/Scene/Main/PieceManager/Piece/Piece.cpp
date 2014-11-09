@@ -12,7 +12,9 @@
 #include "MyMath.h"
 #include "Def.h"
 
-const int TAG_PLAYER_SPRITE = 0;
+namespace{
+    const int TAG_PLAYER_SPRITE = 0;
+}
 
 namespace MyGame{
     Piece::Piece(){
@@ -29,6 +31,7 @@ namespace MyGame{
         //  プレイヤー画像の作成
         Sprite* t_sprite = Sprite::create("dbTex_Main_Player.png");
         t_sprite->setPosition(t_gm->getScreenOrigin());
+        t_sprite->setTag(TAG_PLAYER_SPRITE);
         this->addChild(t_sprite);
         //Assistant::AddSprite(this, t_sprite, TAG_PLAYER_SPRITE, t_gm->getScreenCenter(), 5);
         
