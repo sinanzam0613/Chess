@@ -11,11 +11,15 @@
 #include "MyMath.h"
 #include "AddObject.h"
 #include "GameManager.h"
+
 #include <vector>
 
 namespace MyGame{
     class CharacterHead::Impl{
     public:
+        //********************************************************
+		//　@brief	ノーマルなコンストラクタ
+        //********************************************************
         Impl()
         : m_spriteNum(3){
             //  配列の作成
@@ -24,6 +28,10 @@ namespace MyGame{
             m_spriteNameList[1] = "dbTex_Character_1.jpg";
             m_spriteNameList[2] = "dbTex_Character_2.jpg";
         }
+        
+        //********************************************************
+		//　@brief	ノーマルなデストラクタ
+        //********************************************************
         ~Impl(){
             m_spriteNameList.clear();
             LOG_CUSTOM("deleted Impl class");
@@ -58,18 +66,12 @@ namespace MyGame{
         m_showPosition = t_pos;
     }
     
-    CharacterHead::~CharacterHead(){
-        delete m_impl;
-    }
-    
     bool CharacterHead::init(){
         if(!Node::init()){
             return  false;
         }
         
-        
         int t_summonsMonsterNum = 3;
-        
         
         //  最初はデフォルトの画像で作成 でないとスプライトのリサイズがめんどい
         m_showSprite = Sprite::create("EscapeTexture.png");
@@ -92,9 +94,7 @@ namespace MyGame{
         //  リスナーの登録
         t_dispatcher->addEventListenerWithSceneGraphPriority(t_touchListener, m_showSprite);
         
-//        int* t_ = new int(2);
-//        *t_ = 100;
-        
+        //  一応、自身を表示状態で初期化
         this->setActive(true);
         
         return true;
