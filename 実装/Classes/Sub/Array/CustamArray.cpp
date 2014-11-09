@@ -20,10 +20,12 @@ namespace MyGame{
     }
     
     CustamArray::~CustamArray(){
-        for(auto it = m_list.begin(); it != m_list.end(); ++it){
-            (*it)->release();
+        if(m_list.empty()){
+            for(auto it = m_list.begin(); it != m_list.end(); ++it){
+                (*it)->release();
+            }
+            m_list.clear();
         }
-        m_list.clear();
     }
 
     Node* CustamArray::PushBack(Node* node) {
