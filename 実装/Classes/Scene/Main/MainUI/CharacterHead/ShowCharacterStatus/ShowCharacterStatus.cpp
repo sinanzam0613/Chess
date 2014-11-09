@@ -42,14 +42,10 @@ namespace MyGame{
         m_impl = 0;
     }
     
-#include <memory>
-    
     bool ShowCharacterStatus::init(){
         if(!Node::init()){
             return false;
         }
-        
-        std::shared_ptr<Sprite> t_ptr;
         
         //  表示するためのスプライトを作成
         m_showSprite = Sprite::create("EscapeTexture.png");
