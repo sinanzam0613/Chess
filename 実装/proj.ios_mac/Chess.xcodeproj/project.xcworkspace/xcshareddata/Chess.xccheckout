@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8D86E8B0-D58D-4617-9627-1518E97338D9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Chess</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CB78A4E2-5881-4C98-910A-2CBB80497A98</key>
+		<string>https://github.com/ulzexus/Chess.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>実装/proj.ios_mac/Chess.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CB78A4E2-5881-4C98-910A-2CBB80497A98</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ulzexus/Chess.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CB78A4E2-5881-4C98-910A-2CBB80497A98</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CB78A4E2-5881-4C98-910A-2CBB80497A98</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Chess</string>
+		</dict>
+	</array>
+</dict>
+</plist>
